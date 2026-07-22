@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Windows XP!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="./assets/mslogo.jpg" alt="A photo of the Windows XP™ Logo" id="winxplogo">
+    
+    <div id="welcome2windowsxp" class="xpwindow">
+        <div class="xpheader">
+           <h4 class="xpheadertext">welcome.exe</h4> 
+        </div>
+        <div class="xpcontent">
+            <h1 class="hero4window">Welcome to Windows XP!</h1>
+            <p class="hero4window">Get to know the new operating system by Microsoft</p>
+            <video id="introvid" width="320" height="240">
+                <source src="./assets/intro.mp4" type="video/mp4">
+                A böngésződ nem támogatja a video taget.
+            </video>
+            <div id="vidcontrol">
+                <button id="playvid" onclick="playVideo()"></button>
+                <button id="pausevid" onclick="pauseVideo()"></button>
+            </div>
+
+            <p></p>
+        </div>
+    </div>
+    <!-- Section II. -->
+    <div id="features" class="xpwindow">
+        <div class="xpheader">
+           <h4 class="xpheadertext">features.exe</h4> 
+        </div>
+        <div class="xpcontent">
+            <h1 class="hero4window">Brand New Features</h1>
+            <p class="hero4window">Explore the new features of Windows™ XP®</p>
+            <h3 class="featuretag">Windows™ Luna Design Language</h3>
+            <p class="yap">Gone is the old and gray design of previous Windows™ versions. With Windows™ XP®, you'll experience Luna, the new design language of Windows. Luna brings a colorful and playful appearance to the Personal Computer, making it feel more friendly and approachable by anyone, regardless of age, nationality or gender.</p>
+
+            <div class="photowindow">
+                <div class="photoheader">
+                   <h4 class="photoheadertext">windowsluna.jpg</h4>
+                </div>
+                <img src="assets/windowsluna.jpg" alt="A photo showing the Windows™ Luna design language." id="lunaphoto" class="showcasephoto">
+            </div>
+            
+            <h3 class="featuretag">Faster than ever!</h3>
+            <p class="yap">Say goodbye to waiting. Windows® XP gets you up and running faster than ever before, combining the rock-solid reliability of the 32-bit Windows NT engine with unprecedented consumer performance. Whether you are booting up, launching demanding programs, or playing the latest 3D games, Windows® XP delivers a faster, more responsive experience across your entire PC.</p>
+            <div class="photowindow">
+                <div class="photoheader">
+                   <h4 class="photoheadertext">boot.gif</h4>
+                </div>
+                <img src="assets/boot.gif" alt="A photo showing the Windows™ Luna design language." id="lunaphoto" class="showcasephoto">
+            </div>
+        </div>
+
+            <h3 class="featuretag">Safe and Easy Personal Computing</h3>
+            <p class="yap">Windows® XP makes using your PC friendly, simple, and stress-free. Whether you are a total beginner or a seasoned expert, the streamlined interface puts everything you need right at your fingertips.</p>
+            <ul>
+                <li><strong>A Fresh, Streamlined Look:</strong> Experience the clean, bright design of the Luna interface. Essential controls are right where you expect them, reducing desktop clutter and keeping your workspace organized.</li>
+                <li><strong>Action-Oriented Task Panes:</strong> Folder windows now adapt to what you are doing. Select a file or folder, and Windows Explorer instantly displays relevant tasks on the left—such as renaming, copying, or emailing files—with a single click.</li>
+                <li><strong>Intelligent Search Companion:</strong> Finding lost documents, pictures, or songs is easier than ever. Meet Rover and your animated Search Companions, designed to guide you through quick and thorough file searches across your entire PC.</li>
+                <li><strong>Built-in Help & Support Center:</strong> Stuck on a task? The all-new Help and Support Center combines built-in troubleshooting wizards, online updates, and remote assistance into one easy-to-use launchpad.</li>
+            </ul>
+            <div class="photowindow">
+                <div class="photoheader">
+                   <h4 class="photoheadertext">dog.gif</h4>
+                </div>
+                <img src="assets/dog2.gif" alt="A photo showing the Windows™ Luna design language." id="dog" class="showcasephoto">
+            </div>
+    
+            <div class="photowindow">
+                <div class="photoheader">
+                   <h4 class="photoheadertext">clippy.gif</h4>
+                </div>
+                <img src="assets/clippy.gif" alt="A photo showing the Windows™ Luna design language." id="clippy" class="showcasephoto">
+            </div>
+        </div>
+    </div>
+    <script>
+        const video = document.getElementById("introvid")
+
+        function playVideo() {
+            video.play();
+        }
+
+        function pauseVideo() {
+            video.pause();
+            
+        }
+
+
+        function videoEnded() {
+           if (video.ended); {
+                video.currentTime = 0
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
