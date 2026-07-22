@@ -127,7 +127,7 @@ h1 {
 }
 
 #features {
-    height: 3000px;
+    height: 3500px;
     width: 1000px;
 }
 
@@ -137,6 +137,10 @@ h1 {
 
 .yap {
     padding: 0px 10px;
+}
+
+li {
+   padding: 0px 10px;
 }
 
 .showcasephoto {
@@ -193,7 +197,7 @@ h1 {
 
     #features {
         width: 90%;
-        height: 163%;
+        height: 220%;
     }
 
     .photowindow {
